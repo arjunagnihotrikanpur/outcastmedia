@@ -31,19 +31,56 @@ const Navbar = () => {
       <div className="flex items-center justify-between p-3">
         {/* Logo */}
         <div className="pt-2">
-          <img src={Logo} width="200px" />
+          <a href="#">
+            <img src={Logo} width="200px" />
+          </a>
         </div>
         <div className="flex flex-row space-x-12 align-center justify-between">
+          <div className="link">
+            <a href="#">
+              <div className="text-white 2xl">Home</div>
+            </a>
+          </div>
+          <div className="link">
+            <a href="#about">
+              <div className="text-white 2xl">About</div>
+            </a>
+          </div>
+          <div className="link">
+            <a href="#services">
+              <div className="text-white 2xl">Services</div>
+            </a>
+          </div>
+          <div className="link">
+            <a href="#testimonials">
+              <div className="text-white 2xl">Testimonial</div>
+            </a>
+          </div>
+          <div className="link">
+            <a href="#portfolio">
+              <div className="text-white 2xl">portfolio</div>
+            </a>
+          </div>
+          <div className="link">
+            <a href="#contact">
+              <div className="text-white 2xl">Contact</div>
+            </a>
+          </div>
+
           {/* Call Button */}
-          <IconButton content="Get Started" icon={callIcon} />
+          <IconButton
+            content="Get Started"
+            icon={callIcon}
+            to="https://wa.me/917985741559"
+          />
           {/* Hamburger Icon */}
-          <div id="menu-btn" onClick={handleClick}>
+          {/* <div id="menu-btn" onClick={handleClick}>
             <img
               src={iconSrc}
               id="hamburger-icon"
               className="text-white hamburger"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       {/* Menu */}
@@ -53,11 +90,12 @@ const Navbar = () => {
         style={{ zIndex: -1000 }}
       >
         {/* Pricing Navlink */}
-        <NavLink to="#" content="Pricing" />
-        <NavLink to="#" content="Product" />
-        <NavLink to="#" content="About Us" />
-        <NavLink to="#" content="Careers" />
-        <NavLink to="#" content="Community" />
+        {/* <NavLink to="#" content="Home" />
+        <NavLink to="#about" content="About Us" handleClick={handleClick} />
+        <NavLink to="#" content="Services" />
+        <NavLink to="#" content="Testimonials" />
+        <NavLink to="#" content="Portfolio" />
+        <NavLink to="#" content="Contact" /> */}
       </div>
     </nav>
   );

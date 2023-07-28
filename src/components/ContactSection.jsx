@@ -29,7 +29,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="div bg-black h-screen">
+    <div className="div bg-black h-screen" id="contact">
       <div className="mx-36 flex flex-col md:flex-row justify-between">
         <div className="text-8xl text-white font-bold">
           Got A<br />

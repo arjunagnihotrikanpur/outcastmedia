@@ -21,7 +21,7 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <div className="flex flex-col bg-black h-fit h-screen px-48">
+    <div className="flex flex-col bg-black h-fit h-screen px-48" id="portfolio">
       <div className="text-4xl text-white font-bold mb-24">Our Portfolio</div>
       <div className="flex flex-row">
         <div className="flex flex-col md:flex-row space-x-36">
